@@ -1,0 +1,8 @@
+# CORRECCIÓN CRÍTICA #2: Archivo robots.txt creado (faltaba completamente)
+# Google lo necesita para rastrear el sitio eficientemente.
+# Debe ser accesible en https://www.kreaweb.com.ar/robots.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.kreaweb.com.ar/sitemap.xml

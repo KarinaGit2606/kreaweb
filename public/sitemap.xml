@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  CORRECCIÓN CRÍTICA #2: sitemap.xml creado (faltaba completamente).
+  Google usa este archivo para rastrear el sitio eficientemente.
+  Debe ser accesible en https://www.kreaweb.com.ar/sitemap.xml
+  IMPORTANTE: Actualizar <lastmod> al redesplegar el sitio.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.kreaweb.com.ar/</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://www.kreaweb.com.ar/"/>
+  </url>
+</urlset>
