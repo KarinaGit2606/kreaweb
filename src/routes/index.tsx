@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
        * AHORA: URL absoluta con protocolo y dominio.
        * Google puede ignorar o malinterpretar un og:url relativo.
        */
-      { property: "og:url", content: "https://kreaweb-studio.vercel.app/" },
+      { property: "og:url", content: "https://kreaweb-pearl.vercel.app/" },
       { property: "og:locale", content: "es_AR" },
       { property: "og:site_name", content: "KreaWeb" },
       { property: "og:image", content: heroImg },
@@ -78,7 +78,7 @@ export const Route = createFileRoute("/")({
          * ANTES: url: "/"
          * AHORA: URL absoluta consistente con canonical y og:url.
          */
-        url: "https://kreaweb-studio.vercel.app/",
+        url: "https://kreaweb-pearl.vercel.app/",
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "5",
