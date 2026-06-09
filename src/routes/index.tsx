@@ -452,17 +452,30 @@ function Maintenance() {
  *
  * ACCIÓN IDEAL: crear páginas o secciones individuales por proyecto para
  *   que cada link apunte a un destino único (/portafolio/casa-olivar, etc.)
- *   Esto maximizaría el SEO. El aria-label es la corrección mínima viable.
+ *   Esto maximizaría el SEO. 
+ *   Agrego la url a todas las imagenes, de manera que cuando se agreguen, se actualiza automaticamente
+ *   El aria-label es la corrección mínima viable.
  */
-const projects = [
-  { img: p1, name: "Casa Olivar", tag: "Restaurante" },
-  { img: p2, name: "Studio Lumen", tag: "Peluquería" },
-  { img: p3, name: "Forma Fit", tag: "Entrenador personal" },
-  { img: p4, name: "Méndez & Asoc.", tag: "Abogados" },
-  { img: p5, name: "Café Recoleta", tag: "Cafetería" },
-  { img: p6, name: "Atelier Sur", tag: "Boutique" },
-  { img: p1, name: "Botánica Verde", tag: "Vivero" },
-  { img: p2, name: "Dra. Soler", tag: "Consultorio" },
+
+// AGREGAR antes de: const projects = [
+// TypeScript necesita saber que url existe en el tipo para que no tire error cuando lo usés en el JSX.
+
+type Project = {
+  img: string;
+  name: string;
+  tag: string;
+  url: string | null;
+};
+
+const projects: Project[] = [
+  { img: p1, name: "Elenas Kitchen", tag: "Restaurante", url: "https://portafolio1.kreaweb.com.ar" },
+  { img: p2, name: "Studio Lumen", tag: "Peluquería", url: null },
+  { img: p3, name: "Forma Fit", tag: "Entrenador personal" , url: null },
+  { img: p4, name: "Méndez & Asoc.", tag: "Abogados", url: null },
+  { img: p5, name: "Café Recoleta", tag: "Cafetería", url: null },
+  { img: p6, name: "Atelier Sur", tag: "Boutique", url: null },
+  { img: p1, name: "Botánica Verde", tag: "Vivero", url: null },
+  { img: p2, name: "Dra. Soler", tag: "Consultorio", url: null },
 ];
 
 function Portfolio() {
@@ -484,18 +497,23 @@ function Portfolio() {
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((p, i) => (
             <a
-              key={i}
-              href="#contacto"
-              /*
-               * CORRECCIÓN MEDIO #9: aria-label único por proyecto.
-               * ANTES: sin aria-label — todos los links idénticos para Google.
-               * AHORA: cada link es semánticamente diferenciado.
-               */
-              aria-label={`Ver proyecto ${p.name} — ${p.tag}`}
-              className={`group reveal relative overflow-hidden rounded-3xl bg-card border border-border ${
-                i % 5 === 0 ? "lg:row-span-2 lg:aspect-auto" : ""
-              }`}
-            >
+  key={i}
+  href={p.url ?? "#contacto"}
+   /*
+   * CORRECCIÓN MEDIO #9: aria-label único por proyecto.         
+   * ANTES: sin aria-label — todos los links idénticos para 
+   *Google.
+   * AHORA: cada link es semánticamente diferenciado.
+   * Si el proyecto tiene URL real, abre en nueva pestaña con target="_blank" y el rel="noreferrer" por seguridad 
+   * (evita que el sitio de destino acceda a datos de referencia). Si no tiene URL, sigue yendo a #contacto como antes.
+   */
+  target={p.url ? "_blank" : undefined}
+  rel={p.url ? "noreferrer" : undefined}
+  aria-label={`Ver proyecto ${p.name} — ${p.tag}`}
+  className={`group reveal relative overflow-hidden rounded-3xl bg-card border border-border ${
+    i % 5 === 0 ? "lg:row-span-2 lg:aspect-auto" : ""
+  }`}
+  >
               <div className={`overflow-hidden ${i % 5 === 0 ? "lg:h-[640px]" : "aspect-[4/3]"}`}>
                 {/*
                   * CORRECCIÓN ALTO IMPACTO #4: Imágenes de portfolio con width/height.
