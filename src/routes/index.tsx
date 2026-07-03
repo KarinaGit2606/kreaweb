@@ -510,9 +510,12 @@ function Portfolio() {
   target={p.url ? "_blank" : undefined}
   rel={p.url ? "noreferrer" : undefined}
   aria-label={`Ver proyecto ${p.name} — ${p.tag}`}
-  className={`group reveal relative overflow-hidden rounded-3xl bg-card border border-border ${
-    i % 5 === 0 ? "lg:row-span-2 lg:aspect-auto" : ""
-  }`}
+/*   comento esto porque es lo que me hacia extender las imagenes al principio de la lista de imagenes y no es lo que quiero
+* className={`group reveal relative overflow-hidden rounded-3xl bg-card border border-border ${
+*    i % 5 === 0 ? "lg:row-span-2 lg:aspect-auto" : ""
+*  }`}
+*/
+  className="group reveal relative overflow-hidden rounded-3xl bg-card border border-border"
   >
               <div className={`overflow-hidden ${i % 5 === 0 ? "lg:h-[640px]" : "aspect-[4/3]"}`}>
                 {/*
