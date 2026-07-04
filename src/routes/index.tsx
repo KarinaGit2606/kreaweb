@@ -510,10 +510,10 @@ function Portfolio() {
   target={p.url ? "_blank" : undefined}
   rel={p.url ? "noreferrer" : undefined}
   aria-label={`Ver proyecto ${p.name} — ${p.tag}`}
- className="group reveal relative overflow-hidden rounded-3xl bg-card border border-border"
+  className="group reveal relative overflow-hidden rounded-3xl bg-card border border-border"
   >
               <div className="overflow-hidden aspect-[4/3]">
-                 {/*
+                {/*
                   * CORRECCIÓN ALTO IMPACTO #4: Imágenes de portfolio con width/height.
                   * ANTES: sin width y height declarados → genera layout shift (CLS penalizado).
                   * AHORA: dimensiones declaradas para que el browser reserve el espacio correcto.
