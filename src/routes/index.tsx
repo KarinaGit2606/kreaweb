@@ -515,9 +515,9 @@ function Portfolio() {
 *    i % 5 === 0 ? "lg:row-span-2 lg:aspect-auto" : ""
 *  }`}
 */
-	
-             <div className="overflow-hidden aspect-[4/3]">
-                {/*
+       <div className="lg:col-span-5 relative reveal">
+          <div className="relative rounded-3xl overflow-hidden shadow-lift">
+                 {/*
                   * CORRECCIÓN ALTO IMPACTO #4: Imágenes de portfolio con width/height.
                   * ANTES: sin width y height declarados → genera layout shift (CLS penalizado).
                   * AHORA: dimensiones declaradas para que el browser reserve el espacio correcto.
