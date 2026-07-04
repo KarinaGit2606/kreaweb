@@ -510,13 +510,9 @@ function Portfolio() {
   target={p.url ? "_blank" : undefined}
   rel={p.url ? "noreferrer" : undefined}
   aria-label={`Ver proyecto ${p.name} — ${p.tag}`}
-/*   comento esto porque es lo que me hacia extender las imagenes al principio de la lista de imagenes y no es lo que quiero
-* className={`group reveal relative overflow-hidden rounded-3xl bg-card border border-border ${
-*    i % 5 === 0 ? "lg:row-span-2 lg:aspect-auto" : ""
-*  }`}
-*/
-       <div className="lg:col-span-5 relative reveal">
-          <div className="relative rounded-3xl overflow-hidden shadow-lift">
+ className="group reveal relative overflow-hidden rounded-3xl bg-card border border-border"
+  >
+              <div className="overflow-hidden aspect-[4/3]">
                  {/*
                   * CORRECCIÓN ALTO IMPACTO #4: Imágenes de portfolio con width/height.
                   * ANTES: sin width y height declarados → genera layout shift (CLS penalizado).
