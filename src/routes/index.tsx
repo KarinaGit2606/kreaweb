@@ -515,7 +515,10 @@ function Portfolio() {
 *    i % 5 === 0 ? "lg:row-span-2 lg:aspect-auto" : ""
 *  }`}
 */
+/*la correccion quedo mal porque el tamaño quedo como el expandido, no como debia
   className="group reveal relative overflow-hidden rounded-3xl bg-card border border-border"
+*/
+	<div className="overflow-hidden aspect-[4/3]">
   >
               <div className={`overflow-hidden ${i % 5 === 0 ? "lg:h-[640px]" : "aspect-[4/3]"}`}>
                 {/*
