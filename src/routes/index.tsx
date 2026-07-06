@@ -468,7 +468,7 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { img: p1, name: "Elenas Kitchen", tag: "Restaurante", url: "https://portafolio1.kreaweb.com.ar" },
+  { img: p1, name: "La Mesa de Elena", tag: "Restaurante", url: "https://portafolio1.kreaweb.com.ar" },
   { img: p2, name: "Studio Lumen", tag: "Peluquería", url: null },
   { img: p3, name: "Forma Fit", tag: "Entrenador personal" , url: null },
   { img: p4, name: "Méndez & Asoc.", tag: "Abogados", url: null },
