@@ -470,10 +470,10 @@ type Project = {
 const projects: Project[] = [
   { img: p1, name: "La Mesa de Elena", tag: "Restaurante", url: "https://portafolio1.kreaweb.com.ar" },
   { img: p2, name: "Aura Beauty", tag: "Salon de Belleza", url: "https://portafolio2.kreaweb.com.ar" },
-  { img: p3, name: "Forma Fit", tag: "Entrenador personal" , url: null },
-  { img: p4, name: "Méndez & Asoc.", tag: "Abogados", url: null },
-  { img: p5, name: "Café Recoleta", tag: "Cafetería", url: null },
-  { img: p6, name: "Atelier Sur", tag: "Boutique", url: null },
+  { img: p3, name: "Alma Yoga", tag: "Estudio de Yoga desde el 2016" , url: null },
+  { img: p4, name: "Soluciones del Hogar", tag: "Reparaciones del Hogar, Rapidas y Confiables", url: null },
+  { img: p5, name: "Dr. Juan Perez", tag: "Abogados", url: null },
+  { img: p6, name: "Lucas Ruiz", tag: "Fotografo", url: null },
   { img: p1, name: "Botánica Verde", tag: "Vivero", url: null },
   { img: p2, name: "Dra. Soler", tag: "Consultorio", url: null },
 ];
