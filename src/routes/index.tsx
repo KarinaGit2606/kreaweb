@@ -424,8 +424,8 @@ function Maintenance() {
           <div className="lg:col-span-5 grid sm:grid-cols-2 gap-4 relative">
             <div className="rounded-2xl bg-background/5 border border-background/10 p-6">
               <p className="text-xs uppercase tracking-widest text-accent">Mensual</p>
-              <p className="mt-3 font-display text-2xl font-semibold">$65k – $95k</p>
-              <p className="text-sm text-background/60">ARS / mes</p>
+              <p className="mt-3 font-display text-2xl font-semibold">$150 – $200</p>
+              <p className="text-sm text-background/60">US / mes</p>
             </div>
             <div className="rounded-2xl bg-accent text-foreground p-6">
               <p className="text-xs uppercase tracking-widest">Anual</p>
