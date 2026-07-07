@@ -474,9 +474,11 @@ const projects: Project[] = [
   { img: p4, name: "Soluciones del Hogar", tag: "Reparaciones del Hogar, Rapidas y Confiables", url: null },
   { img: p5, name: "Dr. Juan Perez", tag: "Abogados", url: null },
   { img: p6, name: "Lucas Ruiz", tag: "Fotografo", url: null },
-  { img: p1, name: "Botánica Verde", tag: "Vivero", url: null },
-  { img: p2, name: "Dra. Soler", tag: "Consultorio", url: null },
 ];
+
+//Elimino estos hasta que tenga los sitios y las imagenes
+//  { img: p1, name: "Botánica Verde", tag: "Vivero", url: null },
+//  { img: p2, name: "Dra. Soler", tag: "Consultorio", url: null },
 
 function Portfolio() {
   return (
