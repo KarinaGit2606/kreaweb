@@ -280,8 +280,7 @@ function About() {
 const packages = [
   {
     name: "Básico",
-    price: "$290.000",
-    usd: "≈ $260 USD",
+    price: "$260 USD",
     time: "4 – 7 días",
     desc: "Ideal para empezar con presencia profesional online.",
     features: [
@@ -297,8 +296,7 @@ const packages = [
   },
   {
     name: "Profesional",
-    price: "$490.000",
-    usd: "≈ $440 USD",
+    price: "$440 USD",
     time: "8 – 12 días",
     desc: "El más elegido por negocios que quieren destacar.",
     features: [
@@ -315,8 +313,7 @@ const packages = [
   },
   {
     name: "Premium",
-    price: "$790.000",
-    usd: "≈ $710 USD",
+    price: "$710 USD",
     time: "14 – 18 días",
     desc: "Sitio a medida con animaciones y SEO completo.",
     features: [
@@ -403,7 +400,7 @@ function Packages() {
         </div>
 
         <p className="mt-10 text-center text-sm text-muted-foreground">
-          <span className="text-accent-deep font-medium">10% de descuento</span> si pagás el 50% por adelantado · Precios en ARS se ajustan por inflación.
+          <span className="text-accent-deep font-medium">10% de descuento</span> si pagás el 50% por adelantado.
         </p>
       </div>
     </section>
