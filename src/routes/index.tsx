@@ -369,7 +369,6 @@ function Packages() {
 
               <div className="mt-7 flex items-end gap-2">
                 <span className="font-display text-4xl font-semibold">{p.price}</span>
-                <span className={`text-sm pb-1.5 ${p.featured ? "text-primary-foreground/60" : "text-muted-foreground"}`}>ARS</span>
               </div>
               <p className={`text-sm ${p.featured ? "text-primary-foreground/60" : "text-muted-foreground"}`}>{p.usd} · Entrega en {p.time}</p>
 
