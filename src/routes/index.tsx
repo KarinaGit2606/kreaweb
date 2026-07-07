@@ -615,7 +615,9 @@ function Testimonials() {
 
         <div className="mt-14 grid md:grid-cols-2 gap-5">
           {testimonials.map((t, i) => (
-            <figure key={i} className={`reveal rounded-3xl p-8 lg:p-10 border border-border bg-card relative ${i % 3 === 0 ? "md:translate-y-6" : ""}`}>
+            <figure key={i} className={`reveal rounded-3xl p-8 lg:p-10 border border-border bg-card relative ${
+  				Math.floor(i / 2) % 2 === 1 ? "md:translate-y-6" : ""
+				}`}>
               <Quote className="size-8 text-accent-deep/40" />
               <blockquote className="mt-5 text-lg leading-relaxed text-pretty">"{t.text}"</blockquote>
               <figcaption className="mt-7 flex items-center gap-4">
