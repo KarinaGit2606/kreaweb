@@ -208,7 +208,7 @@ function Hero() {
             <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-accent-deep font-medium">
               <span className="size-1.5 rounded-full bg-accent-deep animate-pulse" /> Disponible
             </div>
-            <p className="mt-2 text-sm">Cupos de octubre abiertos. Reservá tu proyecto.</p>
+            <p className="mt-2 text-sm">Cupos abiertos. Reservá tu proyecto.</p>
           </div>
         </div>
       </div>
