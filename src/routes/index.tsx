@@ -58,7 +58,7 @@ export const Route = createFileRoute("/")({
         description: "Diseño y desarrollo de páginas web profesionales para pequeños negocios y profesionales en Buenos Aires.",
         areaServed: "Buenos Aires, Argentina",
         address: { "@type": "PostalAddress", addressLocality: "Buenos Aires", addressCountry: "AR" },
-        telephone: "+54 11 2563-4589",
+        telephone: "+54 11 2281-8718",
         /*
          * CORRECCIÓN MEDIO #7: Schema.org completado con campos faltantes.
          * Se añaden: email, sameAs (Instagram), openingHours y AggregateRating.
@@ -92,7 +92,7 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const WHATSAPP = "5491125634589";
+const WHATSAPP = "5491122818718";
 const waLink = (msg = "Hola Karina, quiero info sobre KreaWeb.") =>
   `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
 
@@ -652,7 +652,7 @@ function Contact() {
               <span className="size-11 rounded-full bg-accent grid place-items-center text-foreground"><MessageCircle className="size-5" /></span>
               <div>
                 <p className="text-xs uppercase tracking-widest text-accent">WhatsApp</p>
-                <p className="text-base group-hover:text-accent transition">+54 11 2563-4589</p>
+                <p className="text-base group-hover:text-accent transition">+54 11 2281-8718</p>
               </div>
             </a>
             <div className="flex items-center gap-4">
@@ -738,7 +738,7 @@ function Footer() {
         <div>
           <p className="text-xs uppercase tracking-widest text-accent-deep">Contacto</p>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            <li className="flex items-center gap-2"><Phone className="size-3.5" /> +54 11 2563-4589</li>
+            <li className="flex items-center gap-2"><Phone className="size-3.5" /> +54 11 2281-8718</li>
             <li className="flex items-center gap-2"><Mail className="size-3.5" /> hola@kreaweb.com.ar</li>
             <li className="flex items-center gap-2"><MapPin className="size-3.5" /> Buenos Aires, Argentina</li>
           </ul>
