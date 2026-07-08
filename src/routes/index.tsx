@@ -280,7 +280,6 @@ function About() {
 const packages = [
   {
     name: "Básico",
-    price: "$260 USD",
     time: "4 – 7 días",
     desc: "Ideal para empezar con presencia profesional online.",
     features: [
@@ -296,7 +295,6 @@ const packages = [
   },
   {
     name: "Profesional",
-    price: "$440 USD",
     time: "8 – 12 días",
     desc: "El más elegido por negocios que quieren destacar.",
     features: [
@@ -305,7 +303,6 @@ const packages = [
       "Portfolio / Galería o Menú",
       "Formularios avanzados",
       "SEO básico",
-      "Integración Instagram",
       "4 rondas de cambios",
       "Capacitación breve",
     ],
@@ -313,7 +310,6 @@ const packages = [
   },
   {
     name: "Premium",
-    price: "$710 USD",
     time: "14 – 18 días",
     desc: "Sitio a medida con animaciones y SEO completo.",
     features: [
@@ -321,7 +317,6 @@ const packages = [
       "Diseño personalizado con animaciones sutiles",
       "Hasta 12–15 secciones",
       "Galería avanzada o blog simple",
-      "WhatsApp Business + Google Analytics",
       "SEO completo",
       "6 rondas de cambios",
       "1 mes de soporte gratis",
@@ -424,8 +419,6 @@ function Maintenance() {
           <div className="lg:col-span-5 grid sm:grid-cols-2 gap-4 relative">
             <div className="rounded-2xl bg-background/5 border border-background/10 p-6">
               <p className="text-xs uppercase tracking-widest text-accent">Mensual</p>
-              <p className="mt-3 font-display text-2xl font-semibold">$100 – $150</p>
-              <p className="text-sm text-background/60">USD / mes</p>
             </div>
             <div className="rounded-2xl bg-accent text-foreground p-6">
               <p className="text-xs uppercase tracking-widest">Anual</p>
