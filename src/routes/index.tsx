@@ -79,18 +79,21 @@ export const Route = createFileRoute("/")({
          * AHORA: URL absoluta consistente con canonical y og:url.
          */
         url: "https://kreaweb.com.ar/",
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "5",
-          reviewCount: "12", // ACCIÓN: actualizar con el número real de reseñas verificadas
-          bestRating: "5",
-          worstRating: "1",
-        },
+/*    codigo para que considere las evaluaciones reales de google. En este momento se elimina porque no hay ninguna.
+*        aggregateRating: {
+*          "@type": "AggregateRating",
+*          ratingValue: "5",
+*          reviewCount: "12", // ACCIÓN: actualizar con el número real de reseñas verificadas
+*          bestRating: "5",
+*          worstRating: "1",
+*        },
+*/
       }),
     }],
   }),
   component: Home,
 });
+
 
 const WHATSAPP = "5491122818718";
 const waLink = (msg = "Hola Karina, quiero info sobre KreaWeb.") =>
