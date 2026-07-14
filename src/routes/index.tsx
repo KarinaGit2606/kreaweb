@@ -65,7 +65,7 @@ export const Route = createFileRoute("/")({
          * AggregateRating activa las estrellas en los resultados de Google (rich snippets),
          * lo que puede multiplicar el CTR significativamente.
          * ACCIÓN REQUERIDA: reemplazar la URL de Instagram con la real.
-         * ACCIÓN REQUERIDA: actualizar ratingValue y reviewCount con datos reales.
+         * ACCIÓN REQUERIDA: actualizar ratingValue y reviewCount con datos reales, cuando existan. Mientras dejarlo comentado.
          */
         email: "hola@kreaweb.com.ar",
         sameAs: [
@@ -462,7 +462,7 @@ const projects: Project[] = [
   { img: p1, name: "La Mesa de Elena", tag: "Restaurante", url: "https://portafolio1.kreaweb.com.ar" },
   { img: p2, name: "Aura Beauty", tag: "Salon de Belleza", url: "https://portafolio2.kreaweb.com.ar" },
   { img: p3, name: "Alma Yoga", tag: "Estudio de Yoga desde el 2016" , url: "https://portafolio3.kreaweb.com.ar" },
-  { img: p4, name: "Soluciones del Hogar", tag: "Reparaciones del Hogar, Rapidas y Confiables", url: null },
+  { img: p4, name: "Soluciones del Hogar", tag: "Reparaciones del Hogar, Rapidas y Confiables", url: "https://portafolio4.kreaweb.com.ar" },
   { img: p5, name: "Dr. Juan Perez", tag: "Abogados", url: null },
   { img: p6, name: "Lucas Ruiz", tag: "Fotografo", url: null },
 ];
