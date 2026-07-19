@@ -464,7 +464,7 @@ const projects: Project[] = [
   { img: p3, name: "Alma Yoga", tag: "Estudio de Yoga desde el 2016" , url: "https://portafolio3.kreaweb.com.ar" },
   { img: p4, name: "Soluciones del Hogar", tag: "Reparaciones del Hogar, Rapidas y Confiables", url: "https://portafolio4.kreaweb.com.ar" },
   { img: p5, name: "Dr. Juan Perez", tag: "Abogados", url: "https://portafolio5.kreaweb.com.ar" },
-  { img: p6, name: "Lucas Ruiz", tag: "Fotografo", url: null },
+  { img: p6, name: "Lucas Ruiz", tag: "Fotografo", url: "https://portafolio6.kreaweb.com.ar" },
 ];
 
 //Elimino estos hasta que tenga los sitios y las imagenes
